@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Inter&family=Luxurious+Script&family=Poppins&display=swap');
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin:0px;
+    height:100%;
+}
+.background {
+    background-image: url(../imgs/Fish_Fry.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+
+.tabbar {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 100vw;
+}
+
+.logo {
+    font-family: 'Luxurious Script', cursive;
+    color: white;
+    font-size: 80px;
+    padding-left: 50px;
+}
+
+.tabGroup {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    flex-direction: row;
+    gap:4rem;
+    padding-right: 50px;
+    align-items: center;
+    color:white;
+    font-size: 25px;
+}
+
+.tab {
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+.tab:hover {
+    cursor: pointer;
+    text-decoration-color: rgb(255, 255, 255);
+}
+.tab-selected {
+    cursor: pointer;
+    text-decoration-color: rgb(255, 255, 255);
+}
+/* 
+font-family: 'Hubballi', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Luxurious Script', cursive;
+font-family: 'Poppins', sans-serif; */
