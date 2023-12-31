@@ -1,10 +1,16 @@
 import '../styles/home.css'
-const homePage = ()=> {
+import zomatoImg from '../imgs/delivery_partners/Zomato_logo.png'
+import swiggyImg from '../imgs/delivery_partners/Swiggy_logo.png'
+import uberEatsImg from '../imgs/delivery_partners/uber-eats-logo.png'
+
+const createHomePage = () => {
     const homePage=document.createElement('div');
-    homePage.classList.add('home-page');
+    homePage.classList.add('page');
+    homePage.classList.add('home');
     document.body.appendChild(homePage);
     addCTA(homePage);
-    addInfo(homePage)
+    addInfo(homePage);
+    addOrderOptions(homePage);
 }
 
 const addCTA = (homePage)=> {
@@ -21,8 +27,7 @@ const addInfo = (homePage)=> {
     homePage.appendChild(info);
 }
 
-const addOrderOptions = ()=> {
-    const homePage=document.querySelector('.home-page');
+const addOrderOptions = (homePage)=> {
     const order = document.createElement('div');
     order.classList.add('order');
     const text = document.createElement('div');
@@ -31,9 +36,9 @@ const addOrderOptions = ()=> {
     const zomato = document.createElement('img');
     const swiggy = document.createElement('img');
     const uberEats = document.createElement('img');
-    zomato.src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png";
-    uberEats.src="https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/u36ongiveorvpij36xam";
-    swiggy.src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png";
+    zomato.src=zomatoImg;
+    uberEats.src=uberEatsImg;
+    swiggy.src=swiggyImg;
     
 
     //adding to grid
@@ -41,4 +46,4 @@ const addOrderOptions = ()=> {
     homePage.appendChild(order);
 }
 
-export {homePage, addOrderOptions};
+export {createHomePage};

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Inter&family=Luxurious+Script&family=Poppins&display=swap');
 
-.home-page {
+.page.home {
     background-color: rgba(0, 0, 0, 0.61);
     height: 55%;
     display: flex;
@@ -9,13 +9,13 @@
     overflow-y: auto;
 }
 
-.CTA {
+.home>.CTA {
     font-size: 50px;
     color: white;
     font-family: 'Hubballi', sans-serif;
 }
 
-.info {
+.home>.info {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
     font-family: 'Poppins', sans-serif;
@@ -26,11 +26,12 @@
 .order {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     margin-top: 1rem;
+    column-gap: 50px;
 }
 
-.text {
+.home>.text, .order>.text {
     grid-column: 1/4;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -41,8 +42,7 @@
 img {
     height: 140px;
     width: 160px;
-    margin-top: -30px;
-    padding-left: 50px;
+    border-radius: 5px;
     transition: transform 0.5s;
     cursor: pointer;
 }

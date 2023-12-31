@@ -1,3 +1,4 @@
+import { changePage } from ".";
 const tab = (tabGroup,name)=> {
     const tab = document.createElement('div');
     tab.classList.add('tab');
@@ -18,6 +19,7 @@ const addOnClick = () => {
     tabs.forEach(tab=>{
         tab.addEventListener('click', ()=>{
             underline(tab,tabs);
+            changePage(tab);
         })
     })
 }

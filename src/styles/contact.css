@@ -1,0 +1,51 @@
+.page.contact {
+    background-color: rgba(0, 0, 0, 0.61);
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    gap:2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top:2rem;
+}
+
+.contact>.CTA {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.contact>.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+}
+
+
+.title>.text {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-wrap: balance;
+}
+
+i { padding-left: 1rem;
+    margin-top: 2rem;
+    color: white;
+    font-size: 47px;
+    transition: transform 1s;
+}
+
+i:hover {
+    transform: scale(1.1);
+}
